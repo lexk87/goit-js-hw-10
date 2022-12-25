@@ -21,11 +21,11 @@ function searchCountry(e) {
     }
 
     fetchCountries(query)
-        .then(renderSeartchResult)
+        .then(renderSearchResult)
         .catch(fetchError);
 };
 
-function renderSeartchResult(countries) {
+function renderSearchResult(countries) {
     clearMarkup();
 
     if (countries.length > 10) {
